@@ -36,7 +36,6 @@ if (typeof window === 'undefined') {
         fetch: jest.fn(),
     };
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (global as any).window = mockWindow;
 }
 
@@ -44,10 +43,8 @@ if (typeof window === 'undefined') {
 const mockFetch = jest.fn() as jest.MockedFunction<typeof fetch>;
 
 if (typeof global !== 'undefined') {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (global as any).fetch = mockFetch;
 } else {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (window as any).fetch = mockFetch;
 }
 
@@ -60,10 +57,8 @@ const mockConsole = {
 } as MockConsole;
 
 if (typeof global !== 'undefined') {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (global as any).console = mockConsole;
 } else {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (window as any).console = mockConsole;
 }
 

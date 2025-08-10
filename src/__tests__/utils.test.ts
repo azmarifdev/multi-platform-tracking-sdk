@@ -20,9 +20,7 @@ describe('Utils', () => {
 
         it('should return empty string for invalid data', () => {
             expect(hashDataSync('')).toBe('');
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             expect(hashDataSync(null as any)).toBe('');
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             expect(hashDataSync(undefined as any)).toBe('');
         });
     });
