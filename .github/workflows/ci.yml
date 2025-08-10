@@ -31,7 +31,7 @@ jobs:
             - name: Run quality checks
               run: npm run type-check
 
-            - name: Run linting  
+            - name: Run linting
               run: npm run lint:check
 
             - name: Run tests
@@ -115,25 +115,25 @@ jobs:
                   release_name: Multi-Platform Tracking SDK ${{ steps.version.outputs.VERSION }}
                   body: |
                       ## 🚀 Multi-Platform Tracking SDK ${{ steps.version.outputs.VERSION }}
-                      
+
                       ### 📦 Installation:
                       ```bash
                       npm install @azmarifdev/multi-platform-tracking-sdk
                       ```
-                      
+
                       ### 🔄 Changes in this release:
                       ${{ steps.changelog.outputs.CHANGELOG }}
-                      
+
                       ### 🌟 Features:
                       - ✅ Facebook/Meta Pixel & Conversion API
                       - ✅ Instagram Tracking (Stories, Reels, Shopping)  
                       - ✅ Google Tag Manager Integration
                       - ✅ TypeScript Support
                       - ✅ Zero Dependencies
-                      
+
                       ### 📚 Documentation:
                       [View Complete Documentation](https://github.com/azmarifdev/multi-platform-tracking-sdk#readme)
-                      
+
                       ### 🤝 Support:
                       - [Report Issues](https://github.com/azmarifdev/multi-platform-tracking-sdk/issues)
                       - [Discussions](https://github.com/azmarifdev/multi-platform-tracking-sdk/discussions)
