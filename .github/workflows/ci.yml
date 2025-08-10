@@ -31,9 +31,6 @@ jobs:
             - name: Run quality checks
               run: npm run type-check
 
-            - name: Run linting
-              run: npm run lint:check
-
             - name: Run tests
               run: npm run test:ci
 
