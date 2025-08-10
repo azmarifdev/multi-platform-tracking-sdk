@@ -57,7 +57,7 @@ describe('MetaPixelTracker', () => {
                 content_name: 'Test Product',
                 value: 99.99,
                 currency: 'USD',
-            }),
+            })
         );
     });
 
@@ -79,7 +79,7 @@ describe('MetaPixelTracker', () => {
                 content_ids: ['prod-123'],
                 value: 199.98,
                 currency: 'USD',
-            }),
+            })
         );
     });
 

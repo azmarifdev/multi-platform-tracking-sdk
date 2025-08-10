@@ -1,4 +1,12 @@
-import { hashDataSync, generateEventId, isValidPixelId, isValidEmail, isValidPhone, sanitizeUrl, deepClone } from '../utils';
+import {
+    hashDataSync,
+    generateEventId,
+    isValidPixelId,
+    isValidEmail,
+    isValidPhone,
+    sanitizeUrl,
+    deepClone,
+} from '../utils';
 
 describe('Utils', () => {
     describe('hashDataSync', () => {

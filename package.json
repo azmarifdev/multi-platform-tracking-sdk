@@ -59,7 +59,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/azmarifdev/meta-tracking-sdk.git"
+    "url": "git+https://github.com/azmarifdev/meta-tracking-sdk.git"
   },
   "bugs": {
     "url": "https://github.com/azmarifdev/meta-tracking-sdk/issues"
