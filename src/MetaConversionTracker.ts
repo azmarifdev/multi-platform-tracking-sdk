@@ -79,7 +79,12 @@ export class MetaConversionTracker {
                     response = await fetch(this.baseUrl, requestOptions);
                 } catch {
                     // Fallback to require approach for older Node versions
-                    const requireFunc = typeof require !== 'undefined' ? require : (id: string) => { throw new Error(`Module ${id} not found`); };
+                    const requireFunc =
+                        typeof require !== 'undefined'
+                            ? require
+                            : (id: string) => {
+                                  throw new Error(`Module ${id} not found`);
+                              };
                     const https = requireFunc('https');
                     const url = requireFunc('url');
 
@@ -153,7 +158,12 @@ export class MetaConversionTracker {
 
         try {
             if (isNode()) {
-                const requireFunc = typeof require !== 'undefined' ? require : (id: string) => { throw new Error(`Module ${id} not found`); };
+                const requireFunc =
+                    typeof require !== 'undefined'
+                        ? require
+                        : (id: string) => {
+                              throw new Error(`Module ${id} not found`);
+                          };
                 const crypto = requireFunc('crypto');
                 return crypto.createHmac('sha256', this.config.appSecret).update(payload).digest('hex');
             } else {

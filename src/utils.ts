@@ -41,7 +41,12 @@ export async function hashData(data: string): Promise<string> {
     ) {
         try {
             // Use conditional require to avoid eval
-            const requireFunc = typeof require !== 'undefined' ? require : (id: string) => { throw new Error(`Module ${id} not found`); };
+            const requireFunc =
+                typeof require !== 'undefined'
+                    ? require
+                    : (id: string) => {
+                          throw new Error(`Module ${id} not found`);
+                      };
             const crypto = requireFunc('crypto');
             return crypto.createHash('sha256').update(normalizedData).digest('hex');
         } catch {
@@ -93,7 +98,12 @@ export function hashDataSync(data: string): string {
             (globalThis as NodeGlobal).process?.versions?.node
         ) {
             // Use conditional require to avoid eval
-            const requireFunc = typeof require !== 'undefined' ? require : (id: string) => { throw new Error(`Module ${id} not found`); };
+            const requireFunc =
+                typeof require !== 'undefined'
+                    ? require
+                    : (id: string) => {
+                          throw new Error(`Module ${id} not found`);
+                      };
             const crypto = requireFunc('crypto');
             return crypto.createHash('sha256').update(normalizedData).digest('hex');
         }
@@ -266,7 +276,7 @@ export function isValidCurrency(currency: string): boolean {
  * @returns Validation result with errors and warnings
  */
 export function validateConfig(
-    config: Record<string, unknown> | MetaPixelConfig | ConversionAPIConfig | HybridTrackerConfig,
+    config: Record<string, unknown> | MetaPixelConfig | ConversionAPIConfig | HybridTrackerConfig
 ): ValidationResult {
     const errors: string[] = [];
     const warnings: string[] = [];
