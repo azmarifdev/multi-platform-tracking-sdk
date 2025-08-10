@@ -1,23 +1,44 @@
-# Meta Tracking SDK
+# Multi-Platform Tracking SDK
 
-A comprehensive, professional TypeScript/JavaScript SDK for Facebook/Meta Pixel and Conversion API tracking. Self-contained implementation with zero external dependencies, inspired by facebook-nodejs-business-sdk patterns.
+A comprehensive, professional TypeScript/JavaScript SDK for **Facebook/Meta
+Pixel**, **Instagram Tracking**, and **Google Tag Manager** (GTM).
+Self-contained implementation with zero external dependencies for complete
+multi-platform analytics.
 
-[![npm version](https://badge.fury.io/js/@azmarifdev/meta-tracking-sdk.svg)](https://badge.fury.io/js/@azmarifdev/meta-tracking-sdk)
-[![Downloads](https://img.shields.io/npm/dt/@azmarifdev/meta-tracking-sdk.svg)](https://www.npmjs.com/package/@azmarifdev/meta-tracking-sdk)
+[![npm version](https://badge.fury.io/js/@azmarifdev/multi-platform-tracking-sdk.svg)](https://badge.fury.io/js/@azmarifdev/multi-platform-tracking-sdk)
+[![Downloads](https://img.shields.io/npm/dt/@azmarifdev/multi-platform-tracking-sdk.svg)](https://www.npmjs.com/package/@azmarifdev/multi-platform-tracking-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![Tests](https://img.shields.io/badge/Tests-44%20Passing-green.svg)](#testing)
 
-## Features
+## 🌟 Features
 
--   🎯 **Client-side Pixel tracking** - Browser-based Facebook Pixel integration
--   🔒 **Server-side Conversion API** - Privacy-compliant server-side tracking
--   🔄 **Hybrid tracking mode** - Best of both worlds with automatic deduplication
--   📊 **Enhanced data validation** - Built-in validation and normalization
--   🛡️ **Privacy compliant** - GDPR/CCPA ready with data processing options
--   🔧 **Zero dependencies** - Completely self-contained implementation
--   📦 **Framework agnostic** - Works with React, Vue, Angular, Node.js, and more
--   🚀 **Performance optimized** - Minimal bundle size with tree-shaking support
--   📈 **Comprehensive analytics** - Built-in event tracking and analytics
--   🧪 **Test-friendly** - Debug mode and test event support
+### **Facebook/Meta Integration**
+
+- 🎯 **Client-side Pixel tracking** - Browser-based Facebook Pixel integration
+- 🔒 **Server-side Conversion API** - Privacy-compliant server-side tracking
+- 🔄 **Hybrid tracking mode** - Best of both worlds with automatic deduplication
+
+### **Instagram Analytics**
+
+- 📸 **Content engagement tracking** - Stories, Reels, Feed interactions
+- 🛍️ **Shopping events** - Product views, cart actions, purchases
+- 👥 **User interactions** - Follows, likes, shares, comments
+
+### **Google Tag Manager**
+
+- 🏷️ **Enhanced ecommerce** - Complete shopping funnel tracking
+- 📊 **Custom events** - Flexible event tracking with dataLayer
+- 🎯 **Goal tracking** - Conversion and engagement goals
+
+### **Professional Features**
+
+- 📊 **Enhanced data validation** - Built-in validation and normalization
+- 🛡️ **Privacy compliant** - GDPR/CCPA ready with data processing options
+- 🔧 **Zero dependencies** - Completely self-contained implementation
+- 📦 **Framework agnostic** - Works with React, Vue, Angular, Node.js, and more
+- 🚀 **Performance optimized** - Minimal bundle size with tree-shaking support
+- 🧪 **Test-friendly** - Debug mode and test event support
 
 ## Installation
 
@@ -35,7 +56,9 @@ pnpm add @azmarifdev/meta-tracking-sdk
 bun add @azmarifdev/meta-tracking-sdk
 ```
 
-> **Note:** This package is completely self-contained and doesn't require any external Facebook SDK dependencies. It includes its own optimized implementation inspired by Facebook's official patterns.
+> **Note:** This package is completely self-contained and doesn't require any
+> external Facebook SDK dependencies. It includes its own optimized
+> implementation inspired by Facebook's official patterns.
 
 ## Quick Start
 
@@ -275,14 +298,14 @@ Client-side Facebook Pixel tracking.
 
 #### Methods
 
--   `trackPageView(data?)` - Track page views
--   `trackPurchase(data)` - Track purchases
--   `trackAddToCart(data)` - Track add to cart events
--   `trackInitiateCheckout(data)` - Track checkout initiation
--   `trackLead(data)` - Track lead generation
--   `trackRegistration(data)` - Track user registration
--   `trackSearch(data)` - Track search events
--   `trackCustomEvent(eventName, data)` - Track custom events
+- `trackPageView(data?)` - Track page views
+- `trackPurchase(data)` - Track purchases
+- `trackAddToCart(data)` - Track add to cart events
+- `trackInitiateCheckout(data)` - Track checkout initiation
+- `trackLead(data)` - Track lead generation
+- `trackRegistration(data)` - Track user registration
+- `trackSearch(data)` - Track search events
+- `trackCustomEvent(eventName, data)` - Track custom events
 
 ### MetaConversionTracker
 
@@ -290,20 +313,20 @@ Server-side Conversion API tracking with enhanced features.
 
 #### Methods
 
--   `sendEvent(eventData)` - Send single event
--   `sendBatchEvents(events)` - Send multiple events
--   `trackPageView(data)` - Track page views
--   `trackProductView(data)` - Track product views
--   `trackPurchase(data)` - Track purchases
--   `trackAddToCart(data)` - Track add to cart
--   `trackInitiateCheckout(data)` - Track checkout initiation
--   `trackLead(data)` - Track leads
--   `trackRegistration(data)` - Track registrations
--   `trackSearch(data)` - Track search events
--   `testConnection()` - Test API connectivity
--   `validatePixelAccess()` - Validate pixel permissions
--   `getRecommendedEvents(businessType)` - Get recommended events
--   `setRetryConfig(attempts, delay)` - Configure retry behavior
+- `sendEvent(eventData)` - Send single event
+- `sendBatchEvents(events)` - Send multiple events
+- `trackPageView(data)` - Track page views
+- `trackProductView(data)` - Track product views
+- `trackPurchase(data)` - Track purchases
+- `trackAddToCart(data)` - Track add to cart
+- `trackInitiateCheckout(data)` - Track checkout initiation
+- `trackLead(data)` - Track leads
+- `trackRegistration(data)` - Track registrations
+- `trackSearch(data)` - Track search events
+- `testConnection()` - Test API connectivity
+- `validatePixelAccess()` - Validate pixel permissions
+- `getRecommendedEvents(businessType)` - Get recommended events
+- `setRetryConfig(attempts, delay)` - Configure retry behavior
 
 ### HybridTracker
 
@@ -311,11 +334,11 @@ Combined client and server-side tracking with automatic deduplication.
 
 #### Methods
 
--   `trackHybrid(eventName, data)` - Track on both client and server
--   `trackPageView(data)` - Hybrid page view tracking
--   `trackPurchase(data)` - Hybrid purchase tracking
--   `trackAddToCart(data)` - Hybrid add to cart tracking
--   `trackLead(data)` - Hybrid lead tracking
+- `trackHybrid(eventName, data)` - Track on both client and server
+- `trackPageView(data)` - Hybrid page view tracking
+- `trackPurchase(data)` - Hybrid purchase tracking
+- `trackAddToCart(data)` - Hybrid add to cart tracking
+- `trackLead(data)` - Hybrid lead tracking
 
 ## Business Type Recommendations
 
@@ -366,7 +389,7 @@ app.use(
     createMetaTracking({
         pixelId: 'YOUR_PIXEL_ID',
         debug: true,
-    }),
+    })
 );
 
 // In component
@@ -386,7 +409,7 @@ app.use(
     createTrackingMiddleware({
         accessToken: 'YOUR_ACCESS_TOKEN',
         pixelId: 'YOUR_PIXEL_ID',
-    }),
+    })
 );
 ```
 
@@ -422,10 +445,10 @@ const tracker = new MetaConversionTracker({
 
 The SDK is optimized for minimal bundle impact:
 
--   Core library: ~15KB gzipped
--   Tree-shaking friendly
--   Lazy loading of heavy dependencies
--   Browser/Node.js specific builds
+- Core library: ~15KB gzipped
+- Tree-shaking friendly
+- Lazy loading of heavy dependencies
+- Browser/Node.js specific builds
 
 ### Best Practices
 
@@ -538,7 +561,8 @@ await conversionTracker.trackPurchase({
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md)
+for details.
 
 ## License
 
@@ -546,10 +570,11 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
--   📖 [Documentation](https://github.com/yourusername/meta-tracking-sdk/wiki)
--   🐛 [Issue Tracker](https://github.com/yourusername/meta-tracking-sdk/issues)
--   💬 [Discussions](https://github.com/yourusername/meta-tracking-sdk/discussions)
--   📧 [Email Support](mailto:support@yourdomain.com)
+- 📖 [Documentation](https://github.com/yourusername/meta-tracking-sdk/wiki)
+- 🐛 [Issue Tracker](https://github.com/yourusername/meta-tracking-sdk/issues)
+- 💬
+  [Discussions](https://github.com/yourusername/meta-tracking-sdk/discussions)
+- 📧 [Email Support](mailto:support@yourdomain.com)
 
 ## Changelog
 
@@ -557,7 +582,8 @@ See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes.
 
 ---
 
-**Built with ❤️ by [Azm Arif](https://github.com/azmarifdev)** | Enhanced with insights from facebook-nodejs-business-sdk v23.0.1
+**Built with ❤️ by [Azm Arif](https://github.com/azmarifdev)** | Enhanced with
+insights from facebook-nodejs-business-sdk v23.0.1
 
 ## Installation
 
@@ -650,7 +676,11 @@ await tracker.trackPurchase({
 ### Hybrid Tracking (Client + Server)
 
 ```typescript
-import { MetaPixelTracker, MetaConversionTracker, HybridTracker } from '@azmarifdev/meta-tracking-sdk';
+import {
+    MetaPixelTracker,
+    MetaConversionTracker,
+    HybridTracker,
+} from '@azmarifdev/meta-tracking-sdk';
 
 // For maximum tracking reliability
 const hybridTracker = new HybridTracker({
@@ -688,13 +718,13 @@ interface MetaPixelConfig {
 
 #### Methods
 
--   `trackPageView(data?: any): void`
--   `trackProductView(product: ProductData): void`
--   `trackAddToCart(product: ProductData): void`
--   `trackInitiateCheckout(data: CheckoutData): void`
--   `trackPurchase(data: PurchaseData): void`
--   `trackSearch(searchTerm: string): void`
--   `trackRegistration(data?: any): void`
+- `trackPageView(data?: any): void`
+- `trackProductView(product: ProductData): void`
+- `trackAddToCart(product: ProductData): void`
+- `trackInitiateCheckout(data: CheckoutData): void`
+- `trackPurchase(data: PurchaseData): void`
+- `trackSearch(searchTerm: string): void`
+- `trackRegistration(data?: any): void`
 
 ### MetaConversionTracker (Server-Side)
 
@@ -711,12 +741,12 @@ interface ConversionAPIConfig {
 
 #### Methods
 
--   `trackPageView(data: ServerEventData): Promise<EventResponse>`
--   `trackProductView(data: ServerEventData): Promise<EventResponse>`
--   `trackAddToCart(data: ServerEventData): Promise<EventResponse>`
--   `trackInitiateCheckout(data: ServerEventData): Promise<EventResponse>`
--   `trackPurchase(data: ServerEventData): Promise<EventResponse>`
--   `trackSearch(data: ServerEventData): Promise<EventResponse>`
+- `trackPageView(data: ServerEventData): Promise<EventResponse>`
+- `trackProductView(data: ServerEventData): Promise<EventResponse>`
+- `trackAddToCart(data: ServerEventData): Promise<EventResponse>`
+- `trackInitiateCheckout(data: ServerEventData): Promise<EventResponse>`
+- `trackPurchase(data: ServerEventData): Promise<EventResponse>`
+- `trackSearch(data: ServerEventData): Promise<EventResponse>`
 
 ### Data Types
 
@@ -877,7 +907,8 @@ META_DEBUG=true
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md)
+for details.
 
 ## License
 
@@ -885,9 +916,11 @@ MIT © [Azm Arif](https://github.com/azmarifdev)
 
 ## Support
 
--   📧 Email: dev@azmarif.dev
--   🐛 Issues: [GitHub Issues](https://github.com/azmarifdev/meta-tracking-sdk/issues)
--   📖 Documentation: [GitHub Wiki](https://github.com/azmarifdev/meta-tracking-sdk/wiki)
+- 📧 Email: dev@azmarif.dev
+- 🐛 Issues:
+  [GitHub Issues](https://github.com/azmarifdev/meta-tracking-sdk/issues)
+- 📖 Documentation:
+  [GitHub Wiki](https://github.com/azmarifdev/meta-tracking-sdk/wiki)
 
 ## Changelog
 
