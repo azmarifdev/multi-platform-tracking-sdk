@@ -106,13 +106,15 @@ export class MetaConversionTracker {
                                         if (res.statusCode && res.statusCode >= 200 && res.statusCode < 300) {
                                             resolve(result);
                                         } else {
-                                            reject(new Error(`HTTP ${res.statusCode}: ${result.error?.message || data}`));
+                                            reject(
+                                                new Error(`HTTP ${res.statusCode}: ${result.error?.message || data}`)
+                                            );
                                         }
                                     } catch {
                                         reject(new Error(`Failed to parse response: ${data}`));
                                     }
                                 });
-                            },
+                            }
                         );
 
                         req.on('error', reject);
@@ -144,7 +146,9 @@ export class MetaConversionTracker {
      * Generate HMAC-SHA256 signature for app secret proof
      */
     private generateSignature(payload: string): string {
-        if (!this.config.appSecret) return '';
+        if (!this.config.appSecret) {
+            return '';
+        }
 
         try {
             if (isNode()) {
@@ -175,7 +179,7 @@ export class MetaConversionTracker {
                 return this.transformResponse(response);
             },
             this.retryAttempts,
-            this.retryDelay,
+            this.retryDelay
         );
     }
 
@@ -209,7 +213,7 @@ export class MetaConversionTracker {
                 return this.transformResponse(response);
             },
             this.retryAttempts,
-            this.retryDelay,
+            this.retryDelay
         );
     }
 
@@ -222,7 +226,8 @@ export class MetaConversionTracker {
             event_time: eventData.eventTime || getCurrentTimestamp(),
             event_id: eventData.eventId || generateEventId(),
             action_source: eventData.actionSource || 'website',
-            event_source_url: eventData.eventSourceUrl || (typeof window !== 'undefined' ? window.location.href : undefined),
+            event_source_url:
+                eventData.eventSourceUrl || (typeof window !== 'undefined' ? window.location.href : undefined),
             user_data: this.createUserData(eventData.userData || {}),
             custom_data: this.createCustomData(eventData.customData || {}),
             ...(eventData.optOut && { opt_out: eventData.optOut }),
@@ -404,10 +409,13 @@ export class MetaConversionTracker {
         }
 
         // Validate timestamp
-        if (eventData.eventTime && (eventData.eventTime < 1000000000 || eventData.eventTime > Date.now() / 1000 + 3600)) {
+        if (
+            eventData.eventTime &&
+            (eventData.eventTime < 1000000000 || eventData.eventTime > Date.now() / 1000 + 3600)
+        ) {
             throw createTrackingError(
                 'Event time must be a valid Unix timestamp within reasonable bounds',
-                'VALIDATION_ERROR',
+                'VALIDATION_ERROR'
             );
         }
     }
@@ -471,9 +479,24 @@ export class MetaConversionTracker {
      */
     getRecommendedEvents(businessType: 'ecommerce' | 'saas' | 'lead_generation' | 'content' | 'app'): EventName[] {
         const recommendations: Record<string, EventName[]> = {
-            ecommerce: ['PageView', 'ViewContent', 'Search', 'AddToCart', 'InitiateCheckout', 'AddPaymentInfo', 'Purchase'],
+            ecommerce: [
+                'PageView',
+                'ViewContent',
+                'Search',
+                'AddToCart',
+                'InitiateCheckout',
+                'AddPaymentInfo',
+                'Purchase',
+            ],
             saas: ['PageView', 'ViewContent', 'Lead', 'CompleteRegistration', 'StartTrial', 'Subscribe', 'Purchase'],
-            lead_generation: ['PageView', 'ViewContent', 'Lead', 'Contact', 'SubmitApplication', 'CompleteRegistration'],
+            lead_generation: [
+                'PageView',
+                'ViewContent',
+                'Lead',
+                'Contact',
+                'SubmitApplication',
+                'CompleteRegistration',
+            ],
             content: ['PageView', 'ViewContent', 'Search', 'Subscribe', 'Contact'],
             app: ['PageView', 'ViewContent', 'CompleteRegistration', 'AddToCart', 'Purchase', 'Subscribe'],
         };
@@ -497,7 +520,7 @@ export class MetaConversionTracker {
         value: number,
         currency: string = 'USD',
         userData?: UserData,
-        additionalData?: Partial<CustomData>,
+        additionalData?: Partial<CustomData>
     ): Promise<EventResponse> {
         return this.sendEvent({
             eventName: 'Purchase',
@@ -521,7 +544,7 @@ export class MetaConversionTracker {
         value?: number,
         currency: string = 'USD',
         userData?: UserData,
-        additionalData?: Partial<CustomData>,
+        additionalData?: Partial<CustomData>
     ): Promise<EventResponse> {
         return this.sendEvent({
             eventName: 'AddToCart',
@@ -537,7 +560,7 @@ export class MetaConversionTracker {
         value?: number,
         currency: string = 'USD',
         userData?: UserData,
-        additionalData?: Partial<CustomData>,
+        additionalData?: Partial<CustomData>
     ): Promise<EventResponse> {
         return this.sendEvent({
             eventName: 'ViewContent',
