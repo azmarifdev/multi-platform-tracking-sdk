@@ -1,6 +1,6 @@
 {
   "name": "@azmarifdev/multi-platform-tracking-sdk",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Professional multi-platform tracking SDK supporting Facebook/Meta, Instagram, and Google Tag Manager for comprehensive analytics with TypeScript support",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
