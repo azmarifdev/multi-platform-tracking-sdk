@@ -79,8 +79,9 @@ export class MetaConversionTracker {
                     response = await fetch(this.baseUrl, requestOptions);
                 } catch {
                     // Fallback to require approach for older Node versions
-                    const https = eval('require')('https');
-                    const url = eval('require')('url');
+                    const requireFunc = typeof require !== 'undefined' ? require : (id: string) => { throw new Error(`Module ${id} not found`); };
+                    const https = requireFunc('https');
+                    const url = requireFunc('url');
 
                     return new Promise((resolve, reject) => {
                         const parsedUrl = new url.URL(this.baseUrl);
@@ -152,7 +153,8 @@ export class MetaConversionTracker {
 
         try {
             if (isNode()) {
-                const crypto = eval('require')('crypto');
+                const requireFunc = typeof require !== 'undefined' ? require : (id: string) => { throw new Error(`Module ${id} not found`); };
+                const crypto = requireFunc('crypto');
                 return crypto.createHmac('sha256', this.config.appSecret).update(payload).digest('hex');
             } else {
                 console.warn('App secret signing not recommended in browser environment');

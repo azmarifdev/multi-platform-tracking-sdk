@@ -40,7 +40,9 @@ export async function hashData(data: string): Promise<string> {
         (globalThis as NodeGlobal).process?.versions?.node
     ) {
         try {
-            const crypto = eval('require')('crypto');
+            // Use conditional require to avoid eval
+            const requireFunc = typeof require !== 'undefined' ? require : (id: string) => { throw new Error(`Module ${id} not found`); };
+            const crypto = requireFunc('crypto');
             return crypto.createHash('sha256').update(normalizedData).digest('hex');
         } catch {
             // Fall through to browser implementation
@@ -90,7 +92,9 @@ export function hashDataSync(data: string): string {
             (globalThis as NodeGlobal).process?.versions &&
             (globalThis as NodeGlobal).process?.versions?.node
         ) {
-            const crypto = eval('require')('crypto');
+            // Use conditional require to avoid eval
+            const requireFunc = typeof require !== 'undefined' ? require : (id: string) => { throw new Error(`Module ${id} not found`); };
+            const crypto = requireFunc('crypto');
             return crypto.createHash('sha256').update(normalizedData).digest('hex');
         }
     } catch {
