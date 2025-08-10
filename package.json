@@ -1,0 +1,80 @@
+{
+    "name": "@azmarifdev/multi-platform-tracking-sdk",
+    "version": "1.1.0",
+    "description": "Professional multi-platform tracking SDK supporting Facebook/Meta, Instagram, and Google Tag Manager for comprehensive analytics with TypeScript support",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "test": "jest",
+        "lint": "eslint src/**/*.ts",
+        "type-check": "tsc --noEmit",
+        "clean": "rimraf dist",
+        "prepublishOnly": "npm run clean && npm run build"
+    },
+    "keywords": [
+        "multi-platform",
+        "tracking",
+        "analytics",
+        "facebook",
+        "meta",
+        "instagram",
+        "google-tag-manager",
+        "gtm",
+        "conversion-api",
+        "pixel",
+        "ecommerce",
+        "server-side-tracking",
+        "client-side-tracking",
+        "typescript",
+        "social-media-tracking",
+        "unified-tracking",
+        "cross-platform"
+    ],
+    "author": {
+        "name": "Azm Arif",
+        "email": "dev@azmarif.dev",
+        "url": "https://azmarif.dev"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/azmarifdev/meta-tracking-sdk.git"
+    },
+    "bugs": {
+        "url": "https://github.com/azmarifdev/meta-tracking-sdk/issues"
+    },
+    "homepage": "https://github.com/azmarifdev/meta-tracking-sdk#readme",
+    "dependencies": {
+        "tslib": "^2.8.1"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^25.0.7",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-typescript": "^11.1.5",
+        "@types/jest": "^29.5.8",
+        "@types/node": "^20.8.10",
+        "@typescript-eslint/eslint-plugin": "^8.39.0",
+        "@typescript-eslint/parser": "^8.39.0",
+        "eslint": "^8.53.0",
+        "jest": "^29.7.0",
+        "jest-environment-jsdom": "^30.0.5",
+        "rimraf": "^5.0.5",
+        "rollup": "^4.5.0",
+        "rollup-plugin-dts": "^6.1.0",
+        "ts-jest": "^29.1.1",
+        "typescript": "^5.2.2"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
