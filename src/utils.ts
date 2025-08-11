@@ -316,6 +316,36 @@ export function validateConfig(
 }
 
 /**
+ * Validate Meta Conversion API specific configuration
+ * @param config - ConversionAPIConfig to validate
+ * @returns Validation result with errors and warnings
+ */
+export function validateConversionAPIConfig(config: ConversionAPIConfig): ValidationResult {
+    const errors: string[] = [];
+    const warnings: string[] = [];
+
+    // Basic validation
+    if (!config.pixelId) {
+        errors.push('Pixel ID is required');
+    } else if (typeof config.pixelId === 'string' && !isValidPixelId(config.pixelId)) {
+        errors.push('Invalid Pixel ID format');
+    }
+
+    // Access token is mandatory for Conversion API
+    if (!config.accessToken) {
+        errors.push('Access token is required for Conversion API');
+    } else if (typeof config.accessToken === 'string' && !isValidAccessToken(config.accessToken)) {
+        errors.push('Invalid access token format');
+    }
+
+    return {
+        isValid: errors.length === 0,
+        errors,
+        warnings,
+    };
+}
+
+/**
  * Sanitize URL for tracking
  * @param url - URL to sanitize
  * @returns Sanitized URL

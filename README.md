@@ -18,7 +18,7 @@
 > [LinkedIn](https://linkedin.com/in/azmarifdev) •
 > [YouTube](https://youtube.com/@azmarifdev) •
 > [Twitter/X](https://twitter.com/azmarifdev) •
-> [Telegram](https://t.me/azmarifdev)-Platform Tracking SDK
+> [Telegram](https://t.me/azmarifdev)
 
 [![npm version](https://img.shields.io/npm/v/multi-platform-tracking-sdk.svg)](https://www.npmjs.com/package/multi-platform-tracking-sdk)
 [![npm downloads](https://img.shields.io/npm/dm/multi-platform-tracking-sdk.svg)](https://www.npmjs.com/package/multi-platform-tracking-sdk)

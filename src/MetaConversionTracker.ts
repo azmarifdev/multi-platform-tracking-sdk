@@ -1,6 +1,6 @@
 import { ConversionAPIConfig, ServerEventData, EventResponse, UserData, CustomData, EventName } from './types';
 import {
-    validateConfig,
+    validateConversionAPIConfig,
     generateEventId,
     getCurrentTimestamp,
     normalizeUserData,
@@ -32,7 +32,7 @@ export class MetaConversionTracker {
         this.baseUrl = `https://graph.facebook.com/${this.config.apiVersion}/${this.config.pixelId}/events`;
 
         // Enhanced validation
-        const validation = validateConfig(this.config);
+        const validation = validateConversionAPIConfig(this.config);
         if (!validation.isValid) {
             throw createTrackingError(`Invalid configuration: ${validation.errors.join(', ')}`, 'CONFIG_ERROR');
         }
@@ -600,7 +600,7 @@ export class MetaConversionTracker {
         }
 
         // Validate updated config
-        const validation = validateConfig(this.config);
+        const validation = validateConversionAPIConfig(this.config);
         if (!validation.isValid) {
             throw createTrackingError(`Invalid configuration update: ${validation.errors.join(', ')}`, 'CONFIG_ERROR');
         }
