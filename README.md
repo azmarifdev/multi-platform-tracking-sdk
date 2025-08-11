@@ -1,4 +1,18 @@
-# 🚀 Multi-Platform Tracking SDK
+# 🚀 Multi-Platform Tracking SDK | Facebook Meta Pixel | Instagram Analytics | Google Tag Manager
+
+[![npm version](https://img.shields.io/npm/v/multi-platform-tracking-sdk.svg)](https://www.npmjs.com/package/multi-platform-tracking-sdk)
+[![npm downloads](https://img.shields.io/npm/dm/multi-platform-tracking-sdk.svg)](https://www.npmjs.com/package/multi-platform-tracking-sdk)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![Tests](https://img.shields.io/badge/Tests-44%20Passing-green.svg)](#testing)
+[![Build](https://github.com/azmarifdev/multi-platform-tracking-sdk/workflows/Tests/badge.svg)](https://github.com/azmarifdev/multi-platform-tracking-sdk/actions)
+[![Created by A. Z. M. Arif](https://img.shields.io/badge/Created%20by-A.%20Z.%20M.%20Arif-blue)](https://azmarif.dev)
+[![Code Encover](https://img.shields.io/badge/Company-Code%20Encover-green)](https://github.com/azmarifdev)
+
+> **🎯 Professional-grade Multi-Platform Tracking SDK for Facebook/Meta Pixel, Instagram Analytics, and Google Tag Manager**  
+> 
+> **Created by [A. Z. M. Arif](https://azmarif.dev) | [Code Encover](https://github.com/azmarifdev)**  
+> **Follow on Social Media**: [GitHub](https://github.com/azmarifdev) • [LinkedIn](https://linkedin.com/in/azmarifdev) • [YouTube](https://youtube.com/@azmarifdev) • [Twitter/X](https://twitter.com/azmarifdev) • [Telegram](https://t.me/azmarifdev)-Platform Tracking SDK
 
 [![npm version](https://img.shields.io/npm/v/multi-platform-tracking-sdk.svg)](https://www.npmjs.com/package/multi-platform-tracking-sdk)
 [![npm downloads](https://img.shields.io/npm/dm/multi-platform-tracking-sdk.svg)](https://www.npmjs.com/package/multi-platform-tracking-sdk)
@@ -486,13 +500,31 @@ MIT © [Azm Arif](https://github.com/azmarifdev)
 
 ## 🆘 Support
 
-- 📖 **Documentation**:
-  [GitHub Wiki](https://github.com/azmarifdev/multi-platform-tracking-sdk/wiki)
-- 🐛 **Bug Reports**:
-  [GitHub Issues](https://github.com/azmarifdev/multi-platform-tracking-sdk/issues)
-- 💬 **Discussions**:
-  [GitHub Discussions](https://github.com/azmarifdev/multi-platform-tracking-sdk/discussions)
+- 📖 **Documentation**: [GitHub Wiki](https://github.com/azmarifdev/multi-platform-tracking-sdk/wiki)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/azmarifdev/multi-platform-tracking-sdk/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/azmarifdev/multi-platform-tracking-sdk/discussions)
 - 📧 **Email**: dev@azmarif.dev
+- 🌐 **Portfolio**: [azmarif.dev](https://azmarif.dev)
+
+## 👨‍💻 About the Author
+
+**A. Z. M. Arif** is a Full-Stack Software Engineer and the founder of **Code Encover**, specializing in enterprise-grade web applications, analytics solutions, and developer tools.
+
+### � Connect with A. Z. M. Arif:
+- 🌐 **Portfolio**: [azmarif.dev](https://azmarif.dev)
+- 💼 **LinkedIn**: [linkedin.com/in/azmarifdev](https://linkedin.com/in/azmarifdev)
+- 🐙 **GitHub**: [github.com/azmarifdev](https://github.com/azmarifdev)
+- 📺 **YouTube**: [youtube.com/@azmarifdev](https://youtube.com/@azmarifdev)
+- 🐦 **Twitter/X**: [twitter.com/azmarifdev](https://twitter.com/azmarifdev)
+- 📱 **Telegram**: [t.me/azmarifdev](https://t.me/azmarifdev)
+
+### 🏢 About Code Encover:
+**Code Encover** is a software development company focused on creating high-quality, scalable solutions for businesses worldwide. We specialize in:
+- 🔧 Custom Software Development
+- �📊 Analytics & Tracking Solutions
+- 🚀 Enterprise Web Applications
+- 📱 Mobile Application Development
+- ☁️ Cloud Solutions & DevOps
 
 ## 📊 Changelog
 
@@ -502,10 +534,12 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed release history.
 
 <div align="center">
 
-**Built with ❤️ by [Azm Arif](https://github.com/azmarifdev)**
+**🚀 Built with ❤️ by [A. Z. M. Arif](https://azmarif.dev) | [Code Encover](https://github.com/azmarifdev)**
 
-[⭐ Star on GitHub](https://github.com/azmarifdev/multi-platform-tracking-sdk) •
-[📦 View on NPM](https://www.npmjs.com/package/multi-platform-tracking-sdk) •
-[📖 Read the Docs](https://github.com/azmarifdev/multi-platform-tracking-sdk/wiki)
+**Follow @azmarifdev on all platforms for updates and more projects!**
+
+[⭐ Star on GitHub](https://github.com/azmarifdev/multi-platform-tracking-sdk) • [📦 View on NPM](https://www.npmjs.com/package/multi-platform-tracking-sdk) • [📖 Read the Docs](https://github.com/azmarifdev/multi-platform-tracking-sdk/wiki) • [🌐 Visit Portfolio](https://azmarif.dev)
+
+**SEO Keywords**: Facebook Pixel, Meta Pixel, Instagram Analytics, Google Tag Manager, GTM, Conversion API, Tracking SDK, A. Z. M. Arif, azmarifdev, Code Encover, TypeScript, JavaScript, React, Vue, Angular, Node.js, GDPR, CCPA, Privacy Compliant, Zero Dependencies, Multi-Platform Analytics
 
 </div>

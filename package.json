@@ -1,7 +1,39 @@
 {
   "name": "multi-platform-tracking-sdk",
-  "version": "2.1.0",
-  "description": "Professional multi-platform tracking SDK supporting Facebook/Meta, Instagram, and Google Tag Manager for comprehensive analytics with TypeScript support",
+  "version": "2.2.0",
+  "description": "🚀 Professional Multi-Platform Tracking SDK for Facebook/Meta Pixel, Instagram Analytics & Google Tag Manager | Zero Dependencies | TypeScript Ready | Privacy Compliant GDPR/CCPA | Created by A. Z. M. Arif | Code Encover",
+  "keywords": [
+    "multi-platform",
+    "tracking",
+    "analytics",
+    "facebook",
+    "meta",
+    "instagram",
+    "google-tag-manager",
+    "gtm",
+    "conversion-api",
+    "pixel",
+    "ecommerce",
+    "server-side-tracking",
+    "client-side-tracking",
+    "typescript",
+    "social-media-tracking",
+    "unified-tracking",
+    "cross-platform"
+  ],
+  "author": {
+    "name": "Azm Arif",
+    "email": "dev@azmarif.dev",
+    "url": "https://azmarif.dev"
+  },
+  "homepage": "https://github.com/azmarifdev/meta-tracking-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azmarifdev/meta-tracking-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azmarifdev/meta-tracking-sdk/issues"
+  },
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -37,39 +69,7 @@
     "release:auto": "semantic-release",
     "postversion": "git push origin main --tags"
   },
-  "keywords": [
-    "multi-platform",
-    "tracking",
-    "analytics",
-    "facebook",
-    "meta",
-    "instagram",
-    "google-tag-manager",
-    "gtm",
-    "conversion-api",
-    "pixel",
-    "ecommerce",
-    "server-side-tracking",
-    "client-side-tracking",
-    "typescript",
-    "social-media-tracking",
-    "unified-tracking",
-    "cross-platform"
-  ],
-  "author": {
-    "name": "Azm Arif",
-    "email": "dev@azmarif.dev",
-    "url": "https://azmarif.dev"
-  },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/azmarifdev/meta-tracking-sdk.git"
-  },
-  "bugs": {
-    "url": "https://github.com/azmarifdev/meta-tracking-sdk/issues"
-  },
-  "homepage": "https://github.com/azmarifdev/meta-tracking-sdk#readme",
   "dependencies": {
     "tslib": "^2.8.1"
   },

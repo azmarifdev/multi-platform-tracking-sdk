@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://github.com/azmarifdev/multi-platform-tracking-sdk/sitemap.xml
+
+# Allow all search engines to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot  
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# SEO Information
+# Author: A. Z. M. Arif (azmarifdev)
+# Company: Code Encover
+# Website: https://azmarif.dev
+# Email: dev@azmarif.dev
+# Keywords: Facebook Pixel, Meta Pixel, Instagram Analytics, Google Tag Manager, Tracking SDK, A. Z. M. Arif, azmarifdev, Code Encover
