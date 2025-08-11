@@ -39,9 +39,9 @@
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "!dist/**/*.map"
   ],
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
@@ -76,6 +76,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.5",
     "@types/jest": "^29.5.8",
     "@types/node": "^20.8.10",

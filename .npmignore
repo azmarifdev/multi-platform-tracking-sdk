@@ -53,6 +53,13 @@ pids/
 # Development documentation
 CONTRIBUTING.md
 CHANGELOG.md
+README.md
+
+# SEO files (not needed in package)
+SEO_*.md
+robots.txt
+SECURITY.md
+SEO_OPTIMIZATION_SUMMARY.md
 
 # Source maps (reduce package size)
 *.map
