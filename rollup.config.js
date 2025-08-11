@@ -5,6 +5,7 @@ import dts from 'rollup-plugin-dts';
 import { readFileSync } from 'fs';
 
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
+const isProduction = process.env.NODE_ENV === 'production';
 
 export default [
     // ESM and CJS builds
@@ -14,13 +15,13 @@ export default [
             {
                 file: packageJson.main,
                 format: 'cjs',
-                sourcemap: true,
+                sourcemap: !isProduction,
                 exports: 'named',
             },
             {
                 file: packageJson.module,
                 format: 'esm',
-                sourcemap: true,
+                sourcemap: !isProduction,
             },
         ],
         plugins: [

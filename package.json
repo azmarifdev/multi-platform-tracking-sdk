@@ -1,6 +1,6 @@
 {
   "name": "multi-platform-tracking-sdk",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Professional multi-platform tracking SDK supporting Facebook/Meta, Instagram, and Google Tag Manager for comprehensive analytics with TypeScript support",
   "type": "module",
   "main": "dist/index.js",
@@ -12,7 +12,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "NODE_ENV=production rollup -c",
     "build:watch": "rollup -c --watch",
     "test": "jest",
     "test:watch": "jest --watch",

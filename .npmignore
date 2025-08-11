@@ -53,3 +53,13 @@ pids/
 # Development documentation
 CONTRIBUTING.md
 CHANGELOG.md
+
+# Source maps (reduce package size)
+*.map
+
+# GitHub workflows (not needed in package)
+.github/
+
+# Backup files
+*.bak
+*.backup
