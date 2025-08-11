@@ -34,9 +34,15 @@
   "bugs": {
     "url": "https://github.com/azmarifdev/meta-tracking-sdk/issues"
   },
-  "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*.js",
