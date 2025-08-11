@@ -1,5 +1,5 @@
 // Multi-Platform Tracking SDK - Professional tracking package for Facebook/Meta, Instagram, and Google Tag Manager
-// Author: Azm Arif <dev@azmarif.dev>
+// Author: A. Z. M. Arif <hello@azmarif.dev>
 // License: MIT
 
 // Export main tracker classes
@@ -87,7 +87,14 @@ import { MetaConversionTracker } from './MetaConversionTracker';
 import { HybridTracker } from './HybridTracker';
 import { GTMTracker, GTMConfig } from './GTMTracker';
 import { InstagramTracker, InstagramConfig } from './InstagramTracker';
-import { MetaPixelConfig, ConversionAPIConfig, HybridTrackerConfig, ProductData, PurchaseData, SearchData } from './types';
+import {
+    MetaPixelConfig,
+    ConversionAPIConfig,
+    HybridTrackerConfig,
+    ProductData,
+    PurchaseData,
+    SearchData,
+} from './types';
 
 // Default exports for convenience
 export { MetaPixelTracker as default } from './MetaPixelTracker';
@@ -108,7 +115,7 @@ export const PACKAGE_NAME = '@azmarifdev/multi-platform-tracking-sdk';
  */
 export function createPixelTracker(
     pixelId: string,
-    options: Partial<Omit<MetaPixelConfig, 'pixelId'>> = {},
+    options: Partial<Omit<MetaPixelConfig, 'pixelId'>> = {}
 ): MetaPixelTracker {
     return new MetaPixelTracker({
         pixelId,
@@ -126,7 +133,7 @@ export function createPixelTracker(
 export function createConversionTracker(
     accessToken: string,
     pixelId: string,
-    options: Partial<Omit<ConversionAPIConfig, 'accessToken' | 'pixelId'>> = {},
+    options: Partial<Omit<ConversionAPIConfig, 'accessToken' | 'pixelId'>> = {}
 ): MetaConversionTracker {
     return new MetaConversionTracker({
         accessToken,
@@ -145,7 +152,7 @@ export function createConversionTracker(
 export function createHybridTracker(
     pixelId: string,
     serverEndpoint?: string,
-    options: Partial<Omit<HybridTrackerConfig, 'pixelId' | 'serverEndpoint'>> = {},
+    options: Partial<Omit<HybridTrackerConfig, 'pixelId' | 'serverEndpoint'>> = {}
 ): HybridTracker {
     return new HybridTracker({
         pixelId,
@@ -175,7 +182,7 @@ export function createGTMTracker(gtmId: string, options: Partial<Omit<GTMConfig,
  */
 export function createInstagramTracker(
     pixelId: string,
-    options: Partial<Omit<InstagramConfig, 'pixelId'>> = {},
+    options: Partial<Omit<InstagramConfig, 'pixelId'>> = {}
 ): InstagramTracker {
     return new InstagramTracker({
         pixelId,
@@ -279,7 +286,7 @@ export function trackSearch(data: SearchData): void {
 export const SDK_INFO = {
     name: PACKAGE_NAME,
     version: VERSION,
-    author: 'Azm Arif',
+    author: 'A. Z. M. Arif',
     license: 'MIT',
     repository: 'https://github.com/azmarifdev/multi-platform-tracking-sdk',
     homepage: 'https://github.com/azmarifdev/multi-platform-tracking-sdk#readme',

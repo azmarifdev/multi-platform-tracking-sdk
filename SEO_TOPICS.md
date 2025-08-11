@@ -3,6 +3,7 @@
 Add these topics to your GitHub repository for better discoverability:
 
 ## Primary Keywords:
+
 - facebook-pixel
 - meta-pixel
 - instagram-analytics
@@ -13,6 +14,7 @@ Add these topics to your GitHub repository for better discoverability:
 - multi-platform-tracking
 
 ## Technology Stack:
+
 - typescript
 - javascript
 - nodejs
@@ -23,6 +25,7 @@ Add these topics to your GitHub repository for better discoverability:
 - rollup
 
 ## Features:
+
 - privacy-compliant
 - gdpr-compliant
 - ccpa-compliant
@@ -32,6 +35,7 @@ Add these topics to your GitHub repository for better discoverability:
 - framework-agnostic
 
 ## Business/Use Cases:
+
 - e-commerce-tracking
 - marketing-analytics
 - conversion-tracking
@@ -42,11 +46,13 @@ Add these topics to your GitHub repository for better discoverability:
 - business-intelligence
 
 ## Author/Company:
+
 - azmarifdev
 - code-encover
 - a-z-m-arif
 
 ## Platform Specific:
+
 - ios14-compatible
 - cross-platform
 - server-side-tracking

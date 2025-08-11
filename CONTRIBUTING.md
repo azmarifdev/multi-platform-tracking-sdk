@@ -293,7 +293,7 @@ Any other relevant information
 
 - **GitHub Issues**: Bug reports and feature requests
 - **GitHub Discussions**: General questions and ideas
-- **Email**: dev@azmarif.dev for sensitive issues
+- **Email**: hello@azmarif.dev for sensitive issues
 
 ### Code of Conduct
 

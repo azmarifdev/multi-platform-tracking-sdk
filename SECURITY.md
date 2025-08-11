@@ -132,7 +132,7 @@ For security-related inquiries:
 
 For general inquiries:
 
-- **Email**: dev@azmarif.dev
+- **Email**: hello@azmarif.dev
 - **GitHub Issues**: For non-security related bugs
 - **GitHub Discussions**: For questions and feature requests
 
