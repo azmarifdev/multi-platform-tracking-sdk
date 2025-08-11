@@ -10,14 +10,14 @@ and establish professional branding for **A. Z. M. Arif** and **Code Encover**.
 
 ### ✅ NPM Package Published
 
-- **Version**: 2.2.0
+- **Version**: 2.3.0
 - **Status**: ✅ Successfully Published
 - **Package Size**: 253KB (37% optimized)
 - **Registry**: https://www.npmjs.com/package/multi-platform-tracking-sdk
 
 ### ✅ GitHub Release Created
 
-- **Tag**: v2.2.0
+- **Tag**: v2.3.0
 - **Status**: ✅ Released with comprehensive notes
 - **Repository**: https://github.com/azmarifdev/multi-platform-tracking-sdk
 
