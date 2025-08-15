@@ -1,4 +1,4 @@
-// Core types for the Meta Tracking SDK
+// Core types for the multi platform tracking sdk
 
 export interface ProductData {
     id: string;
@@ -72,7 +72,15 @@ export interface EventData {
     eventTime?: number;
     eventId?: string;
     eventSourceUrl?: string;
-    actionSource?: 'website' | 'email' | 'app' | 'phone_call' | 'chat' | 'physical_store' | 'system_generated' | 'other';
+    actionSource?:
+        | 'website'
+        | 'email'
+        | 'app'
+        | 'phone_call'
+        | 'chat'
+        | 'physical_store'
+        | 'system_generated'
+        | 'other';
     userData?: UserData;
     customData?: CustomData;
     testEventCode?: string;

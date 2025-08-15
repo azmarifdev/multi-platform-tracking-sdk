@@ -17,7 +17,7 @@ interface NodeGlobal {
 }
 
 /**
- * Utility functions for Meta Tracking SDK
+ * Utility functions for multi platform tracking sdk
  */
 
 /**

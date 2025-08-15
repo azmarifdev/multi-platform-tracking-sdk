@@ -1,4 +1,12 @@
-import { MetaPixelConfig, ProductData, CheckoutData, PurchaseData, SearchData, RegistrationData, EventName } from './types';
+import {
+    MetaPixelConfig,
+    ProductData,
+    CheckoutData,
+    PurchaseData,
+    SearchData,
+    RegistrationData,
+    EventName,
+} from './types';
 import { validateConfig, generateEventId, isBrowser, createTrackingError } from './utils';
 
 // Extend Window interface for fbq
@@ -31,7 +39,7 @@ export class MetaPixelTracker {
             debug: false,
             autoInit: true,
             version: '2.0',
-            agent: 'meta-tracking-sdk',
+            agent: 'multi-platform-tracking-sdk',
             ...config,
         };
 
@@ -243,7 +251,7 @@ export class MetaPixelTracker {
                 content_category: product.category,
                 brand: product.brand,
             },
-            eventId,
+            eventId
         );
     }
 
@@ -273,7 +281,7 @@ export class MetaPixelTracker {
                     },
                 ],
             },
-            eventId,
+            eventId
         );
     }
 
@@ -301,7 +309,7 @@ export class MetaPixelTracker {
                 num_items: data.products.length,
                 ...data.customData,
             },
-            eventId,
+            eventId
         );
     }
 
@@ -330,7 +338,7 @@ export class MetaPixelTracker {
                 transaction_id: data.orderId,
                 ...data.customData,
             },
-            eventId,
+            eventId
         );
     }
 
@@ -347,7 +355,7 @@ export class MetaPixelTracker {
                 search_string: data.searchTerm,
                 ...data.customData,
             },
-            eventId,
+            eventId
         );
     }
 
@@ -365,7 +373,7 @@ export class MetaPixelTracker {
                 status: data.status,
                 ...data.customData,
             },
-            eventId,
+            eventId
         );
     }
 
@@ -387,7 +395,7 @@ export class MetaPixelTracker {
                 content_category: product.category,
                 brand: product.brand,
             },
-            eventId,
+            eventId
         );
     }
 
@@ -405,7 +413,7 @@ export class MetaPixelTracker {
                 currency: data.currency || 'USD',
                 ...data,
             },
-            eventId,
+            eventId
         );
     }
 

@@ -65,7 +65,7 @@ export class MetaConversionTracker {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'User-Agent': 'meta-tracking-sdk/1.1.0',
+                'User-Agent': 'multi-platform-tracking-sdk/1.1.0',
             },
             body: JSON.stringify(requestBody),
         };

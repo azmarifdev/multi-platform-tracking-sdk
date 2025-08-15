@@ -26,13 +26,13 @@
     "email": "hello@azmarif.dev",
     "url": "https://azmarif.dev"
   },
-  "homepage": "https://github.com/azmarifdev/meta-tracking-sdk#readme",
+  "homepage": "https://github.com/azmarifdev/multi-platform-tracking-sdk#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azmarifdev/meta-tracking-sdk.git"
+    "url": "git+https://github.com/azmarifdev/multi-platform-tracking-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/azmarifdev/meta-tracking-sdk/issues"
+    "url": "https://github.com/azmarifdev/multi-platform-tracking-sdk/issues"
   },
   "type": "module",
   "main": "dist/index.cjs",
