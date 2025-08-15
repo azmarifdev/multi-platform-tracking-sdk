@@ -12,7 +12,7 @@ and this project adheres to
 ### 🔧 Bug Fixes & Improvements
 
 - **Performance Optimization**: Enhanced tracking efficiency and response times
-- **Code Refinements**: Improved internal code structure and organization  
+- **Code Refinements**: Improved internal code structure and organization
 - **Error Handling**: Better error handling and validation mechanisms
 - **Type Safety**: Enhanced TypeScript definitions and type checking
 - **Utility Functions**: Optimized utility functions for better performance
